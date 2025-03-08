@@ -2,6 +2,11 @@ import mongoose, { Schema } from 'mongoose';
 import INote from '../interfaces/Note';
 
 const noteSchema: Schema = new Schema({
+    id: {
+        type: String,
+        required: true,
+        unique: true
+    },
     title: {
         type: String,
         required: true,
