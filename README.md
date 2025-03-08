@@ -31,7 +31,7 @@ If MongoDB is not installed locally, you can follow the installation instruction
 1. Clone the Repository
 First, clone the repository to your local machine using this code below:
 
-`git clone https://github.com/yourusername/note-management-app.git`
+`git clone https://github.com/EjikeJosephUche/typescriptRestApi.git`
 
 `cd typescriptRestApi`
 
@@ -180,4 +180,4 @@ URL Params: id=[string] (ID of the note to be deleted)
 ### Contributing
 Feel free to fork the repository, open issues, and submit pull requests. Contributions are always welcome!
 
-**Made with ❤️**
+**Made with ❤️ By Joseph Uche**
