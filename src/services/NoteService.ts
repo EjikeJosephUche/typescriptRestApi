@@ -10,7 +10,7 @@ export class NoteService {
         return Note.find();
     }
 
-    async createNote(noteData:{id: Number, title: String, content: String}): Promise<INote>{
+    async createNote(noteData:{title: String, content: String}): Promise<INote>{
         const savedNote = await Note.create(noteData);
         return savedNote;
     }
