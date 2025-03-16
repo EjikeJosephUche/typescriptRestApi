@@ -1,0 +1,129 @@
+2025-03-16T08:52:27.685Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","categoryId":"123"}
+2025-03-16T08:52:27.687Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","categoryId":"123"}
+2025-03-16T09:04:55.359Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","categoryId":"123"}
+2025-03-16T09:04:55.360Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","categoryId":"123"}
+2025-03-16T09:09:30.747Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","categoryId":"123"}
+2025-03-16T09:09:30.748Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","categoryId":"123"}
+2025-03-16T09:10:27.129Z - Method: POST /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","categoryId":"124"}
+2025-03-16T09:10:27.129Z - Method: POST /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","categoryId":"124"}
+2025-03-16T09:10:48.841Z - Method: POST /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T09:10:48.841Z - Method: POST /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T09:10:59.012Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T09:10:59.012Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T09:12:19.400Z - Method: GET /api/notes/category/124 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T09:18:38.731Z - Method: GET /api/notes/categories/124 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T09:18:38.731Z - Method: GET /api/notes/categories/124 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T09:20:42.963Z - Method: GET /api/notes/categories/124 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T09:20:42.965Z - Method: GET /api/notes/categories/124 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T12:50:17.066Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T12:50:17.068Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T12:52:01.936Z - Method: PUT /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"Work"}
+2025-03-16T12:52:01.937Z - Method: PUT /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"Work"}
+2025-03-16T12:52:16.173Z - Method: GET /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"Work"}
+2025-03-16T12:52:16.174Z - Method: GET /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"Work"}
+2025-03-16T12:56:40.249Z - Method: PUT /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:56:40.253Z - Method: PUT /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:57:16.684Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:57:16.685Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:01.349Z - Method: DELETE /api/notes/67cde6ea87fb3c01d3c00cd8 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:01.349Z - Method: DELETE /api/notes/67cde6ea87fb3c01d3c00cd8 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:13.523Z - Method: GET /api/notes/67cde6ea87fb3c01d3c00cd8 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:13.523Z - Method: GET /api/notes/67cde6ea87fb3c01d3c00cd8 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:19.495Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:19.495Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:47.941Z - Method: DELETE /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:47.941Z - Method: DELETE /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:55.500Z - Method: GET /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:58:55.500Z - Method: GET /api/notes/67d6954aae9d632f659a88d2 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:59:06.322Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:59:06.322Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:59:44.359Z - Method: DELETE /api/notes/67d69583ae9d632f659a88d4 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T12:59:44.359Z - Method: DELETE /api/notes/67d69583ae9d632f659a88d4 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T13:24:34.687Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:26:45.633Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:26:45.637Z - Method: POST /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:27:28.446Z - Method: GET /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:27:28.447Z - Method: GET /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:37:57.385Z - Method: DELETE /api/notes/67d6d1953c46da8e93051a63 - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:37:57.389Z - Method: DELETE /api/notes/67d6d1953c46da8e93051a63 - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:38:10.600Z - Method: GET /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:38:10.601Z - Method: GET /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:38:28.675Z - Method: GET /api/notes/e2781f76-795a-4c39-aef8-825b4114831c - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:38:28.676Z - Method: GET /api/notes/e2781f76-795a-4c39-aef8-825b4114831c - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:38:45.782Z - Method: GET /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:38:45.782Z - Method: GET /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:38:55.930Z - Method: GET /api/notes/67d6d1953c46da8e93051a63 - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:38:55.931Z - Method: GET /api/notes/67d6d1953c46da8e93051a63 - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:39:17.192Z - Method: GET /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:39:17.192Z - Method: GET /api/notes/ - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:39:39.355Z - Method: GET /api/notes/e2781f76-795a-4c39-aef8-825b4114831c - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:39:39.355Z - Method: GET /api/notes/e2781f76-795a-4c39-aef8-825b4114831c - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:39:48.282Z - Method: GET /api/notes/67d6d1953c46da8e93051a63 - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:39:48.282Z - Method: GET /api/notes/67d6d1953c46da8e93051a63 - Body: {"title":"This is test 1","content":"The is the content of test 1","category":"Work"}
+2025-03-16T13:41:34.278Z - Method: POST /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:41:34.278Z - Method: POST /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:44:08.507Z - Method: POST /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:44:08.513Z - Method: POST /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:44:40.671Z - Method: GET /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:44:40.672Z - Method: GET /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:44:52.289Z - Method: GET /api/notes/27ffc809-5bef-4264-8a67-bed6dcd4d9d0 - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:44:52.291Z - Method: GET /api/notes/27ffc809-5bef-4264-8a67-bed6dcd4d9d0 - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:45:17.601Z - Method: GET /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:45:17.602Z - Method: GET /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T13:48:39.868Z - Method: POST /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T13:48:39.871Z - Method: POST /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T13:49:04.082Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T13:49:04.083Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T13:52:42.760Z - Method: DELETE /api/notes/67d6d1953c46da8e93051a63 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T13:52:42.759Z - Method: DELETE /api/notes/67d6d1953c46da8e93051a63 - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T13:52:54.413Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T13:52:54.413Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","category":"Work"}
+2025-03-16T14:06:34.284Z - Method: GET /api/notes/ - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:06:34.289Z - Method: GET /api/notes/ - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:07:07.663Z - Method: POST /api/notes/ - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:07:07.665Z - Method: POST /api/notes/ - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:07:42.350Z - Method: GET /api/notes/ - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:07:42.350Z - Method: GET /api/notes/ - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:08:19.895Z - Method: GET /api/notes/categories/work - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:08:19.897Z - Method: GET /api/notes/categories/work - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:08:30.162Z - Method: GET /api/notes/categories/Work - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:08:30.162Z - Method: GET /api/notes/categories/Work - Body: {"title":"This is test 4","content":"The is the content of test 4","category":"Work"}
+2025-03-16T14:19:49.265Z - Method: POST /api/notes/ - Body: {"title":"This is test 5","content":"The is the content of test 5","category":"Work"}
+2025-03-16T14:19:49.268Z - Method: POST /api/notes/ - Body: {"title":"This is test 5","content":"The is the content of test 5","category":"Work"}
+2025-03-16T14:20:20.907Z - Method: GET /api/notes/ - Body: {"title":"This is test 5","content":"The is the content of test 5","category":"Work"}
+2025-03-16T14:20:20.907Z - Method: GET /api/notes/ - Body: {"title":"This is test 5","content":"The is the content of test 5","category":"Work"}
+2025-03-16T14:21:04.103Z - Method: PUT /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T14:23:02.788Z - Method: GET /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T14:23:02.788Z - Method: GET /api/notes/ - Body: {"title":"This is test 2","content":"The is the content of test 2","category":"Personal"}
+2025-03-16T14:23:54.377Z - Method: PUT /api/notes/67d6d5a8ab8a8f38aff4488f - Body: {"title":"This is updated test 2","content":"The is the content of the updated test 2","category":"Personal"}
+2025-03-16T14:23:54.378Z - Method: PUT /api/notes/67d6d5a8ab8a8f38aff4488f - Body: {"title":"This is updated test 2","content":"The is the content of the updated test 2","category":"Personal"}
+2025-03-16T14:24:35.823Z - Method: PUT /api/notes/67d6d5a8ab8a8f38aff4488f - Body: {"title":"This is updated test 2","content":"The is the content of the updated test 2","category":"personal"}
+2025-03-16T14:24:35.823Z - Method: PUT /api/notes/67d6d5a8ab8a8f38aff4488f - Body: {"title":"This is updated test 2","content":"The is the content of the updated test 2","category":"personal"}
+2025-03-16T14:42:06.088Z - Method: PUT /api/notes/67d6d5a8ab8a8f38aff4488f - Body: {"title":"This is updated test 2","content":"The is the content of the updated test 2","category":"Personal"}
+2025-03-16T14:42:06.092Z - Method: PUT /api/notes/67d6d5a8ab8a8f38aff4488f - Body: {"title":"This is updated test 2","content":"The is the content of the updated test 2","category":"Personal"}
+2025-03-16T14:42:21.564Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 2","content":"The is the content of the updated test 2","category":"Personal"}
+2025-03-16T14:42:21.565Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 2","content":"The is the content of the updated test 2","category":"Personal"}
+2025-03-16T14:43:23.057Z - Method: PUT /api/notes/67d6d6b7f0709b9acbb3aa97 - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T14:43:23.058Z - Method: PUT /api/notes/67d6d6b7f0709b9acbb3aa97 - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T14:45:03.066Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T14:45:03.066Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T14:45:21.644Z - Method: DELETE /api/notes/67d6d5a8ab8a8f38aff4488f - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T14:45:21.645Z - Method: DELETE /api/notes/67d6d5a8ab8a8f38aff4488f - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T14:45:45.112Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T14:45:45.113Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T14:47:52.572Z - Method: POST /api/notes/ - Body: {"title":"This is test 6","content":"The is the content of test 6","category":"Personal"}
+2025-03-16T14:47:52.573Z - Method: POST /api/notes/ - Body: {"title":"This is test 6","content":"The is the content of test 6","category":"Personal"}
+2025-03-16T14:50:19.460Z - Method: GET /api/notes/categories/Work - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:50:19.461Z - Method: GET /api/notes/categories/Work - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:50:50.387Z - Method: GET /api/notes/categories/work - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:50:50.387Z - Method: GET /api/notes/categories/work - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:53:35.183Z - Method: GET /api/notes/categories/Work - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:53:35.187Z - Method: GET /api/notes/categories/Work - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:53:57.931Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:53:57.932Z - Method: GET /api/notes/ - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:55:33.225Z - Method: PUT /api/notes/67d6db0b59ac6da4443f38ab - Body: {"title":"This is updated test 4","content":"The is the content of the updated test 4","category":"PERSONAL"}
+2025-03-16T14:55:33.225Z - Method: PUT /api/notes/67d6db0b59ac6da4443f38ab - Body: {"title":"This is updated test 4","content":"The is the content of the updated test 4","category":"PERSONAL"}
+2025-03-16T14:56:30.587Z - Method: GET /api/notes/categories/WORK - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:56:30.587Z - Method: GET /api/notes/categories/WORK - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:56:51.197Z - Method: GET /api/notes/categories/PERSONAL - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T14:56:51.198Z - Method: GET /api/notes/categories/PERSONAL - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}

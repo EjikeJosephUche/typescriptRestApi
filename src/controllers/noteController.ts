@@ -1,4 +1,5 @@
-import INote from "../interfaces/Note";
+// import mongoose from "mongoose";
+// import INote from "../interfaces/INote";
 import { NoteService } from "../services/NoteService";
 import { Request, Response } from "express";
 
@@ -8,9 +9,9 @@ export default class NoteController {
     constructor (){
         this.noteService = new NoteService();
     }
-    async getNote(req: Request, res: Response){
+    async getNoteById(req: Request, res: Response){
         try{
-            const getNote = await this.noteService.getNote(req.params.id);
+            const getNote = await this.noteService.getNoteById(req.params.id);
             if(!getNote){
                 res.status(404).json("Request was not found");
             } else {
@@ -34,12 +35,47 @@ export default class NoteController {
     async createNote(req: Request, res: Response){
         try{
             const note = await this.noteService.createNote(req.body)
-            res.status(201).json(note)
+            res.status(201).json({
+                message: "Note created successfully!",
+                data: note
+            })
         } catch (error){
             res.status(500).json(error)
         }
 
     }
+
+    
+    async deleteNote(req: Request, res: Response){
+        try {
+            const deleteNote = await this.noteService.deleteNote(req.params.id);
+            if (!deleteNote){
+                res.status(404).json("File does not exist");
+            } else {
+                res.status(204).json({message: "file deleted successfully"});
+                
+            }
+        } catch (error) {
+            res.status(500).json(error)
+        }
+    }
+    
+    async getNotesByCategoryId(req: Request, res: Response){
+        
+        try{
+            const { categoryId } = req.params;
+            
+            const note = await this.noteService.getNotesByCategoryId(categoryId);
+            if(!note){
+                res.status(404).json("File does not exist");
+            } else {
+                res.json(note)
+            }
+        } catch (error){
+            res.status(500).json(error);
+        }
+    }
+    
 
     async updateNote(req: Request, res: Response){
         try{
@@ -47,27 +83,14 @@ export default class NoteController {
             if (!updateNote){
                 res.status(404).json("File not found");
             } else {
-                res.json(updateNote);
+                res.json({message: "Note updated successfully",
+                    data: updateNote});
             }
         } catch (error){
             res.status(500).json(error)
         }
     }
-
-    async deleteNote(req: Request, res: Response){
-        try {
-            const deleteNote = await this.noteService.deleteNote(req.params.id);
-            if (!deleteNote){
-                res.status(404).json("File does not exist");
-            } else {
-                res.status(204).send();
-
-            }
-        } catch (error) {
-            res.status(500).json(error)
-        }
-    }
-
-
+    
 }
+
 

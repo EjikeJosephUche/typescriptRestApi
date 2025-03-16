@@ -1,12 +1,8 @@
 import mongoose, { Schema } from 'mongoose';
-import INote from '../interfaces/Note';
+import INote from '../interfaces/INote';
+
 
 const noteSchema: Schema = new Schema({
-    id: {
-        type: String,
-        required: true,
-        unique: true
-    },
     title: {
         type: String,
         required: true,
@@ -15,19 +11,24 @@ const noteSchema: Schema = new Schema({
         type: String,
         required: true,
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    },
-    updatedAt: {
-        type: Date,
-        default: Date.now
-    },
+    category: {
+        type: String,
+        required: true
+    }
  }, {
         timestamps: true
-    }
+    },
 );
+
+// Pre-save hook to ensure category is in lowercase before saving
+noteSchema.pre('save', function (next) {
+    if (typeof this.category === 'string') {
+      this.category = this.category.toLowerCase();
+    }
+    next();
+  });
+  
 
 const Note = mongoose.model<INote>('Note', noteSchema);
 
-export default Note;
+export  { Note };

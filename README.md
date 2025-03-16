@@ -10,6 +10,7 @@ This is a simple Note Management application built using Node.js, Typescript, Ex
 - Retrieve all notes
 - Update an existing note
 - Delete a note
+- Retrieve notes based on a particular category
 
 ### Technologies Used
 - `Node.js:` JavaScript runtime for building the application.
@@ -70,8 +71,13 @@ The application will run on http://localhost:3000.
 /src                             # This is the source folder where all my typscript code resides
   /controllers
     - NoteController.ts          # The Controller responsible for handling HTTP requests
+  /middleware
+    - loggingMiddleware.ts       # this logs requests to requestLogs.txt
+    - validateNote.middleware.ts  # This validates the note before they are sent to the server
   /models
     - NoteModel.ts               # Mongoose schema for Note Item
+  /routes
+    - note.route.ts              # Routing for my endpoints
   /services
     - NoteService.ts             # This Service layer contains the logic for interacting with the Database
   - db.ts                        # MongoDB connection setup
@@ -87,6 +93,8 @@ The application will run on http://localhost:3000.
 
 - **/services:** Contains business logic. The NoteService.ts file interacts with the NoteModel to perform database operations (e.g., findById, find, save, findByIdAndUpdate, findByIdAndDelete).
 
+- **/middleware:** Contains middleware for validating the note before it is sent to the server and logging it to a text file.
+
 - **/config/db.ts:** Contains the MongoDB connection logic. This file uses Mongoose to connect to MongoDB.
 
 - **server.ts:** The entry point of the application that sets up the Express server and routes.
@@ -96,7 +104,7 @@ The application will run on http://localhost:3000.
 Here are the available API endpoints for the Note application:
 
 1. Get All Notes
-URL: /notes
+URL: /api/notes
 Method: GET
 Response: Returns a list of all notes.
 
@@ -126,7 +134,7 @@ Use Postman, enter the link http://localhost:3000/notes
 ```
 
 2. Create a New Note
-URL: /notes
+URL: /api/notes
 Method: POST
 Body:
 
@@ -148,7 +156,7 @@ Body:
 ```
 
 3. Update an Existing Note
-URL: /notes/:id
+URL: /api/notes/:id
 Method: PUT
 URL Params: id=[string] (ID of the note to be updated)
 Body:
@@ -170,9 +178,14 @@ Body:
 ```
 
 4. Delete a Note
-URL: /notes/:id
+URL: /api/notes/:id
 Method: DELETE
 URL Params: id=[string] (ID of the note to be deleted)
+
+5. Get Notes by their category
+URL: /api/notes/categories/:categoryId ⁠ 
+Method: GET
+URL Params: category=[string] (category of the notes to fetch from the database)
 
 **Response:** HTTP status code 204 No Content if the note was successfully deleted.
 
