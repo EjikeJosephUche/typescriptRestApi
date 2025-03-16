@@ -20,7 +20,7 @@ const noteSchema: Schema = new Schema({
     },
 );
 
-// Pre-save hook to ensure category is in lowercase before saving
+// Pre-save hook to ensure category is in lowercase before saving to avoid string mismatch during search by categoryId
 noteSchema.pre('save', function (next) {
     if (typeof this.category === 'string') {
       this.category = this.category.toLowerCase();

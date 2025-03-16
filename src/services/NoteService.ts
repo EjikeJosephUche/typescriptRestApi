@@ -1,4 +1,3 @@
-// import ICategory from "../interfaces/ICategory";
 import INote from "../interfaces/INote";
 import { Note } from "../models/NoteModel";
 

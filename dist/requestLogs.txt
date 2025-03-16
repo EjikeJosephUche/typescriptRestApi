@@ -1,0 +1,4 @@
+2025-03-16T19:54:58.261Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T19:54:58.263Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T19:56:06.166Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}
+2025-03-16T19:56:06.167Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}

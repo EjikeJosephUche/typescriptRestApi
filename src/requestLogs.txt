@@ -127,3 +127,4 @@
 2025-03-16T14:56:30.587Z - Method: GET /api/notes/categories/WORK - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
 2025-03-16T14:56:51.197Z - Method: GET /api/notes/categories/PERSONAL - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
 2025-03-16T14:56:51.198Z - Method: GET /api/notes/categories/PERSONAL - Body: {"title":"This is test 3","content":"The is the content of test 3","categoryId":"124"}
+2025-03-16T19:59:40.834Z - Method: GET /api/notes/ - Body: {"title":"This is updated test 3","content":"The is the content of the updated test 3","category":"Work"}

@@ -10,7 +10,7 @@ interface NoteRequest extends Request{
 export default function validateNote(req: NoteRequest, res: Response, next: NextFunction): any | void{
     const { title, content, category } = req.body;
     if (!title || !content || !category) {
-        return res.status(400).json({message: 'Title, content, and categoryId are required'});
+        return res.status(400).json({message: 'Title, content, and category are required'});
     }
     next();
 }

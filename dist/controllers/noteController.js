@@ -14,10 +14,10 @@ class NoteController {
     constructor() {
         this.noteService = new NoteService_1.NoteService();
     }
-    getNote(req, res) {
+    getNoteById(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const getNote = yield this.noteService.getNote(req.params.id);
+                const getNote = yield this.noteService.getNoteById(req.params.id);
                 if (!getNote) {
                     res.status(404).json("Request was not found");
                 }
@@ -45,23 +45,10 @@ class NoteController {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const note = yield this.noteService.createNote(req.body);
-                res.status(201).json(note);
-            }
-            catch (error) {
-                res.status(500).json(error);
-            }
-        });
-    }
-    updateNote(req, res) {
-        return __awaiter(this, void 0, void 0, function* () {
-            try {
-                const updateNote = yield this.noteService.updateNote(req.params.id, req.body);
-                if (!updateNote) {
-                    res.status(404).json("File not found");
-                }
-                else {
-                    res.json(updateNote);
-                }
+                res.status(201).json({
+                    message: "Note created successfully!",
+                    data: note
+                });
             }
             catch (error) {
                 res.status(500).json(error);
@@ -76,7 +63,41 @@ class NoteController {
                     res.status(404).json("File does not exist");
                 }
                 else {
-                    res.status(204).send();
+                    res.status(204).json({ message: "file deleted successfully" });
+                }
+            }
+            catch (error) {
+                res.status(500).json(error);
+            }
+        });
+    }
+    getNotesByCategoryId(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const { categoryId } = req.params;
+                const note = yield this.noteService.getNotesByCategoryId(categoryId);
+                if (!note) {
+                    res.status(404).json("File does not exist");
+                }
+                else {
+                    res.json(note);
+                }
+            }
+            catch (error) {
+                res.status(500).json(error);
+            }
+        });
+    }
+    updateNote(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const updateNote = yield this.noteService.updateNote(req.params.id, req.body);
+                if (!updateNote) {
+                    res.status(404).json("File not found");
+                }
+                else {
+                    res.json({ message: "Note updated successfully",
+                        data: updateNote });
                 }
             }
             catch (error) {

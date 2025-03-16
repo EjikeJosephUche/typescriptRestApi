@@ -33,30 +33,15 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Note = void 0;
+exports.Category = void 0;
 const mongoose_1 = __importStar(require("mongoose"));
-const noteSchema = new mongoose_1.Schema({
-    title: {
-        type: String,
-        required: true,
-    },
-    content: {
-        type: String,
-        required: true,
-    },
-    category: {
+const categorySchema = new mongoose_1.Schema({
+    name: {
         type: String,
         required: true
-    }
+    },
 }, {
     timestamps: true
 });
-// Pre-save hook to ensure category is in lowercase before saving to avoid string mismatch during search by categoryId
-noteSchema.pre('save', function (next) {
-    if (typeof this.category === 'string') {
-        this.category = this.category.toLowerCase();
-    }
-    next();
-});
-const Note = mongoose_1.default.model('Note', noteSchema);
-exports.Note = Note;
+const Category = mongoose_1.default.model('Category', categorySchema);
+exports.Category = Category;

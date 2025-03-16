@@ -1,5 +1,3 @@
-// import mongoose from "mongoose";
-// import INote from "../interfaces/INote";
 import { NoteService } from "../services/NoteService";
 import { Request, Response } from "express";
 
